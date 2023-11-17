@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>personal protfolio website</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img src="" class="logo">
+                <ul>
+                    <li><a href="#">home</a></li>
+                    <li><a href="#">about</a></li>
+                    <li><a href="#">skills</a></li>
+                    <li><a href="#">certifications</a></li>
+                    <li><a href="#">contact</a></li>
+
+
+                </ul>
+            </nav>
+            <div class="header-text">
+                <p><span>UI|UX designer</span></p>
+                <h1>Hi,I'm <span>Shareef</span><br>A computer science student</h1>
+
+            </div>
+        </div>
+    </div>
+    <!-- <--------------------about----->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>
+                        This is Shareef, I am Pre-Final year Computer Science and Engineer currently pursuing my
+                        BTech in Vellore institute of Technology, Chennai. Committed and goal-oriented computer science
+                        graduate looking to pursue a career in the software engineering domain. Possess excellent
+                        knowledge in Python, OOPS(C++), HTML, CSS, Javascript. Ability to learn things quickly and
+                        capable of working in a fast-paced and team-driven environment.
+                        Moveover I like to travel. I believe travelling gives you a new perspective to everything. You
+                        get to know a lot about the different cultures, the cuisines, their history, the language and
+                        all the small unique things every place has to offer.
+                    </p>
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">skills</p>
+                        <p class="tab-links " onclick="opentab('education')">education</p>
+
+
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>UI/UX</span><br>Experienced in UI/UX design,creating engaging digital eperiences
+                            </li>
+                            <li><span>Machine Learning</span><br>Skilled in diverse machine learning
+                                algorithms:regression,clustering,classification</li>
+                            <li><span>Web applications</span><br>Skilled in crafting functional and user-friendly web
+                                applications</li>
+
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-Present</span><br>Under Graduate at vellore institue of Technology</li>
+                            <li><span>2019-2021</span><br>Secondary education at srichaitanya educational
+                                institutons,vijayawada</li>
+                            <li><span>2017-2019</span><br>schooling at Dr.KKR Gowtham</li>
+
+                        </ul>
+                    </div>
+
+
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+    <!-- -----------------skills------------------ -->
+    <div class="skills" id="main-skills">
+        <div class="container-3">
+            <div class="title"></div>
+            <h1><a href="">My skills</a></h1>
+            <div class="row">
+                <div class="col-1-1">
+                    <h4>
+                        Language and Databases
+                    </h4>
+                    <p class="tab-links">
+                        
+                         <img src="./c++.png" alt="" height="80" width="80">
+                        <img src="./html.jpg" alt="" height="80" width="80">
+                        <img src="css.jpg" alt="" height="80" width="80">
+                        <img src="./js.jpg" alt="" height="80" width="80">
+                        <img src="java.png" alt="" height="80" width="80">
+                        <img src="python.png" alt="" height="80" width="120">
+                        <img src="mysql.jpg" alt="" height="80" width="120">
+                     </p>
+
+
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-1-2">
+        <h1>Tools and libraries</h1>
+        <p>
+            <img src="./azure (1).png" height="60" width="140">
+            <img src="./matlab (1).png" height="60" width="80">
+            <img src="./Netlify (1).png" height="60" width="140">
+            <img src="./linux (1).jpg" height="60" width="140">
+            <img src="./numpy (1).jpg" height="60" width="140">
+            <img src="pandas (1).png" height="60" width="140">
+        </p>
+
+    </div>
+
+    <div id="certifications">
+        <div class="container">
+            <h1 class="sub-title">My Certifications</h1>
+            <div class="certifications-list">
+            <img src="" alt="">
+            </div>
+        </div>
+
+
+
+
+    </div>
+
+
+
+
+
+
+    <script>
+        var list1 = document.getElementsByClassName('tab-links');
+        var list2 = document.getElementsByClassName('tab-contents');
+        // console.log(list1, list2)
+        function opentab(tabname) {
+            for (tablink of list1) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of list2) {
+                tabcontent.classList.remove("active-tab");
+            }
+
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+</script>
+</body>
+
+</html>
